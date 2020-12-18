@@ -1,0 +1,57 @@
+$mobile-width-only: 320px;
+$tablet-width: 768px;
+$desktop-width: 1300px;
+$retina-dppx: 1.5dppx;
+
+@import "./btn/btn.scss";
+@import "./container/container.scss";
+@import "./contacts-btn/constacts-btn.scss";
+@import "./main/main.scss";
+@import "./footer/footer.scss";
+@import "./footer-block/footer-block.scss";
+@import "./promo/promo.scss";
+@import "./promo-head/promo-head.scss";
+@import "./promo-card/promo-card.scss";
+@import "./navigation/navigation.scss";
+@import "./navigation-bar/navigation-bar.scss";
+@import "./about-us/about-us.scss";
+@import "./merchandaise/merchandaise.scss";
+@import "./merchandaise-head/merchandaise-head.scss";
+@import "./reviews/reviews.scss";
+@import "./review-submit/review-submit.scss";
+@import "./reviews-btn/review-btn.scss";
+@import "./reviews-container/review-container.scss";
+
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+  url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
