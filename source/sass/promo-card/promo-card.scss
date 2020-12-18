@@ -1,0 +1,32 @@
+.promo-card {
+  display: flex;
+  flex-direction: column;
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &__block-h2 {
+    width: 130px;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: white;
+  }
+
+  &__block-img {
+  }
+
+  &__block-first {
+    height: 105px;
+    background-color: #63d1bb;
+  }
+
+  &__block-second {
+    height: 105px;
+    background-color: #56c3b2;
+  }
+
+}
