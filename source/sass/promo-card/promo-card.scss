@@ -1,0 +1,40 @@
+.promo-card {
+  display: flex;
+  flex-direction: column;
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &__block-h2 {
+    width: 130px;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: white;
+  }
+  //добавить стили для img
+  &__block-img {
+  }
+
+  &__block-first {
+    height: 105px;
+    background-color: #63d1bb;
+    background-image: url("../img/icon-interior.svg");
+    background-position-x: 250px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+
+  &__block-second {
+    height: 105px;
+    background-color: #56c3b2;
+    background-image: url("../img/icon-toy.svg");
+    background-position-x: 240px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+
+}
