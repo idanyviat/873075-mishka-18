@@ -1,0 +1,15 @@
+.merchandaise-head {
+  &__goods-name,
+  &__goods-day {
+    margin-bottom: 0;
+    font-size: 25px;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+  }
+
+  &__goods-day {
+    margin-top: 0;
+    color: #63d1bb;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+}
