@@ -14,8 +14,8 @@ $retina-dppx: 1.5dppx;
 @import "./navigation/navigation.scss";
 @import "./navigation-bar/navigation-bar.scss";
 @import "./about-us/about-us.scss";
-@import "./merchandaise/merchandaise.scss";
-@import "./merchandaise-head/merchandaise-head.scss";
+@import "./merchandise/merchandise.scss";
+@import "./merchandise-head/merchandise-head.scss";
 @import "./reviews/reviews.scss";
 @import "./review-submit/review-submit.scss";
 @import "./reviews-btn/review-btn.scss";
@@ -24,8 +24,7 @@ $retina-dppx: 1.5dppx;
 
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/opensans.woff2") format("woff2"),
-  url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -33,8 +32,7 @@ $retina-dppx: 1.5dppx;
 
 @font-face {
   font-family: "OpenSansBold";
-  src: url("../fonts/opensansbold.woff2") format("woff2"),
-  url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -43,6 +41,7 @@ body {
   margin: 0 auto;
   padding: 0;
   min-width: 320px;
+  font-family: "OpenSans", "Arial", sans-serif;
 }
 
 html {

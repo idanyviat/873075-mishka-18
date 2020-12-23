@@ -1,0 +1,57 @@
+.merchandise {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &__text {
+    padding: 0;
+  }
+
+  &__text-info {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "OpenSans", "Arial", sans-serif;
+  }
+
+  &__form,
+  &__form-table {
+    padding: 0;
+    padding-bottom: 28px;
+    tbody {
+      border-collapse: collapse;
+    }
+  }
+
+  &__form-table td {
+    font-size: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 55px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .merchandaise__form-padding {
+    padding-right: 0;
+  }
+
+  &__form-price {
+    padding: 28px 66px;
+    color: #444444;
+    font-size: 17px;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+    font-weight: 700;
+  }
+
+  &__form-btn {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+    color: #444444;
+    border: 2px solid #444444;
+    background-color: white;
+  }
+}
+
