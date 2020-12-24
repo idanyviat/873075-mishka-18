@@ -1,0 +1,13 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+
+  &__cards {
+    padding: 0 30px;
+  }
+
+  &__img {
+    align-self: flex-start;
+    fill: #63d1bb;
+  }
+}

@@ -20,7 +20,7 @@
       </nav>
     </header>
     <main>
-        <div class="promo">
+        <section class="promo">
           <div class="promo-head">
             <h1 class="promo-head__h1">
               Милые штуки<br> ручной<br> работы для дома
@@ -40,8 +40,8 @@
               </h2>
             </span>
           </div>
-        </div>
-        <div class="merchandise">
+        </section>
+        <section class="merchandise">
           <span class="merchandise-head">
             <h2 class="merchandise-head merchandise-head__goods-name">
               Вязаные корзинки
@@ -68,43 +68,62 @@
             <span class="merchandise__form merchandise__form-price">Цена: <span class="price">990</span> руб.</span>
             <button class="merchandise__form merchandise__form-btn">Заказать</button>
           </div>
-        </div>
-        <div class="about-us">
+        </section>
+        <section class="about-us">
           <span class="about-us about-us__title">
-            <!--FIXME: Технический долг, h3//-->
-            <h3></h3>
+            <h3>Коротко о нас</h3>
           </span>
           <div class="about-us about-us__cards">
-            <div class="about-us about-us__cards-advantages"></div>
-            <div class="about-us about-us__cards-advantages"></div>
-            <div class="about-us about-us__cards-advantages"></div>
-            <div class="about-us about-us__cards-advantages"></div>
-            <div class="about-us about-us__cards-advantages"></div>
-            <div class="about-us about-us__cards-advantages"></div>
+            <div class="about-us about-us__cards-advantages">
+              <img class="about-us about-us__img" src="./img/icon-feature-flower.svg" alt="Иконка цветка">
+              <p class="about-us about-us__text">Экологически чистые материалы</p>
+            </div>
+            <div class="about-us about-us__cards-advantages">
+              <img class="about-us about-us__img" src="./img/icon-feature-money.svg" alt="Иконка денег">
+              <p class="about-us about-us__text">Скандинавский стиль по российской цене</p>
+            </div>
+            <div class="about-us about-us__cards-advantages">
+              <img class="about-us about-us__img" src="./img/icon-feature-heart.svg" alt="Иконка сердца">
+              <p class="about-us about-us__text">Увеличивает лайки на фотографиях</p>
+            </div>
+            <div class="about-us about-us__cards-advantages">
+              <img class="about-us about-us__img" src="./img/icon-feature-ball.svg" alt="Иконка мяча">
+              <p class="about-us about-us__text">Связано вручную с любовью и умилением</p>
+            </div>
+            <div class="about-us about-us__cards-advantages">
+              <img class="about-us about-us__img" src="./img/icon-feature-rocket.svg" alt="Иконка ракеты">
+              <p class="about-us about-us__text">Поддержка отечественного производителя</p>
+            </div>
+            <div class="about-us about-us__cards-advantages">
+              <img class="about-us about-us__img" src="./img/icon-feature-gift.svg" alt="Иконка подарка">
+              <p class="about-us about-us__text">Поставляеться в подарочной упоковке</p>
+            </div>
           </div>
-        </div>
-        <div class="reviews-container">
+        </section>
+        <section class="reviews-container">
           <div class="reviews">
             <span class="reviews reviews__title">
               <h3>Отзывы</h3>
             </span>
             <div class="reviews reviews__text">
-              <!--FIXME: Техническиий долг, p//-->
-              <p></p>
+              <p>Я молодая мама, но всё равно фотографии не набирали
+                и близко такого количества лайков, как у популярных инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными,
+                а также набирают больше лайков!</p>
             </div>
             <span class="reviews reviews_name">
-              <!--FIXME: Техническиий долг, h2, p//-->
-              <h2></h2>
-              <p></p>
+              <h3>Анастасия Красильникова</h3>
+              <p>@misssssiskras</p>
             </span>
           </div>
           <div class="reviews-btn">
-            <button class="review-btn btn"></button>
-            <button class="review-btn btn"></button>
+            <button class="review-btn btn btn-left"></button>
+            <button class="review-btn btn btn-right"></button>
           </div>
-          <button class="review-submit">Написать</button>
-        </div>
-        <div class="contacts">
+          <button class="review-submit btn">Написать</button>
+        </section>
+        <section class="contacts">
           <span class="contacts contacts__title">
             <!--FIXME: Техническиий долг, h3//-->
             <h3></h3>
@@ -114,11 +133,11 @@
           <!--FIXME: Техническиий долг, iframe//-->
           <iframe></iframe>
           <button class="contacts-btn btn">Напишите нам</button>
-        </div>
+        </section>
     </main>
     <footer>
       <div class="container">
-        <div class="footer">
+        <section class="footer">
           <div class="footer-block">
             <span class="footer-block footer-block__logo-svg">
               <!--FIXME: Техническиий долг, svg//-->
@@ -127,14 +146,14 @@
               </svg>
             </span>
           </div>
-          <div class="footer-block">
+          <section class="footer-block">
             <span class="footer-block footer-block__footer-social">
               <a class="footer-block__footer-social footer-block__footer-social--fb"><img src="" alt=""></a>
               <a class="footer-block__footer-social footer-block__footer-social--in"><img src="" alt=""></a>
               <a class="footer-block__footer-social footer-block__footer-social--vk"><img src="" alt=""></a>
             </span>
-          </div>
-          <div class="footer-block">
+          </section>
+          <section class="footer-block">
             <span class="footer-block footer-block__html">
               <a href=""> <!--FIXME: Техническиий долг, link-->
                 <!--FIXME: Техническиий долг, svg-->
@@ -143,8 +162,8 @@
                 </svg>
               </a>
             </span>
-          </div>
-        </div>
+          </section>
+        </section>
       </div>
     </footer>
   </body>
