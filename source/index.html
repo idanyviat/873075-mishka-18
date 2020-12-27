@@ -118,48 +118,56 @@
             </span>
           </div>
           <div class="reviews-btn">
-            <button class="review-btn btn btn-left"></button>
-            <button class="review-btn btn btn-right"></button>
+            <button class="review-btn btn btn-left" type="button">
+              <img src="img/icon-left-arrow.svg" alt="left-arrow">
+            </button>
+            <button class="review-btn btn btn-right" type="button">
+              <img src="img/icon-right-arrow.svg" alt="left-arrow">
+            </button>
           </div>
-          <button class="review-submit btn">Написать</button>
+          <button class="review-submit btn" type="submit">Написать</button>
         </section>
         <section class="contacts">
           <span class="contacts contacts__title">
-            <!--FIXME: Техническиий долг, h3//-->
-            <h3></h3>
+            <h3>Контакты</h3>
           </span>
-          <!--FIXME: Техническиий долг, table//-->
-          <table></table>
-          <!--FIXME: Техническиий долг, iframe//-->
-          <iframe></iframe>
-          <button class="contacts-btn btn">Напишите нам</button>
+          <table class="contacts contacts__table">
+            <tbody>
+              <tr>
+                <td>e-mail:</td>
+                <td>info@mimimishkashop.ru</td>
+              </tr>
+              <tr><td>адрес:</td>
+                <td>г. Санкт-Петербург,
+                ул. Большая Конюшенная,
+                д. 19/8, офис 101</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="container">
+          <iframe class="contacts contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609087091647!5m2!1sru!2sru"
+                width="100%" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <button class="contacts contacts__btn btn">Напишите нам</button>
         </section>
     </main>
     <footer>
       <div class="container">
         <section class="footer">
-          <div class="footer-block">
-            <span class="footer-block footer-block__logo-svg">
-              <!--FIXME: Техническиий долг, svg//-->
-              <svg>
-                <use></use>
-              </svg>
-            </span>
-          </div>
           <section class="footer-block">
             <span class="footer-block footer-block__footer-social">
-              <a class="footer-block__footer-social footer-block__footer-social--fb"><img src="" alt=""></a>
-              <a class="footer-block__footer-social footer-block__footer-social--in"><img src="" alt=""></a>
-              <a class="footer-block__footer-social footer-block__footer-social--vk"><img src="" alt=""></a>
+              <a class="footer-block__footer footer-block__footer-social--in"><img src="./img/icon-insta.svg" alt="Instagram link"></a>
+              <a class="footer-block__footer footer-block__footer-social--fb"><img src="./img/icon-fb.svg" alt="Facebook link"></a>
+              <a class="footer-block__footer footer-block__footer-social--tw"><img src="./img/icon-twitter.svg" alt="Twitter link"></a>
             </span>
           </section>
-          <section class="footer-block">
+          <section class="footer-block footer-block__logo">
             <span class="footer-block footer-block__html">
-              <a href=""> <!--FIXME: Техническиий долг, link-->
-                <!--FIXME: Техническиий долг, svg-->
-                <svg>
-                  <use></use>
-                </svg>
+              <a href="index.html">
+                <div class="footer-block footer-block__html-logo">
+                  <p class="footer-block footer-block__html-text">Разработано</p>
+                  <img src="./img/htmlacademy.svg" alt="Logo HtmlAcademy">
+                </div>
               </a>
             </span>
           </section>
