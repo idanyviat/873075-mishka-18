@@ -1,0 +1,24 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding: 0 30px;
+    font-size: 25px;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+  }
+
+  &__text {
+    font-size: 17px;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+  }
+
+  &__cards {
+    padding: 0 30px;
+  }
+
+  &__img {
+    align-self: flex-start;
+    fill: #63d1bb;
+  }
+}

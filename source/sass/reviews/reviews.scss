@@ -1,0 +1,26 @@
+.reviews {
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-family: "OpenSans", "Arial", sans-serif;
+    line-height: 30px;
+  }
+
+  &_name {
+    h3 {
+      margin-bottom: 0;
+      font-size: 17px;
+      font-family: "OpenSansBold", "Arial", sans-serif;
+    }
+
+    p {
+      padding-top: 18px;
+      margin-top: 0;
+    }
+  }
+}

@@ -4,6 +4,7 @@ $retina-dppx: 1.5dppx;
 
 @import "./btn/btn.scss";
 @import "./container/container.scss";
+@import "./contacts/contacts.scss";
 @import "./contacts-btn/constacts-btn.scss";
 @import "./main/main.scss";
 @import "./footer/footer.scss";
@@ -17,9 +18,9 @@ $retina-dppx: 1.5dppx;
 @import "./merchandise/merchandise.scss";
 @import "./merchandise-head/merchandise-head.scss";
 @import "./reviews/reviews.scss";
-@import "./review-submit/review-submit.scss";
-@import "./reviews-btn/review-btn.scss";
-@import "./reviews-container/review-container.scss";
+@import "reviews/review-submit/review-submit.scss";
+@import "reviews/reviews-btn/review-btn.scss";
+@import "reviews/reviews-container/review-container.scss";
 
 
 @font-face {
