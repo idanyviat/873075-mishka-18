@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Мишка</title>
+    <title>Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav class="navigation-bar">
+      <nav class="navigation-bar navigation-bar--opened">
+        <button class="navigation-bar__toggle" type="button"><span class="visability-hidden">Открыть меню</span></button>
         <div class="container">
           <ul class="navigation">
             <li class="navigation navigation__item">Каталог товаров</li>
             <li class="navigation navigation__item">Вязание на заказ</li>
-            <li class="navigation navigation__item"><span><img src="" alt=""></span>Поиск по сайту</li>
-            <li class="navigation navigation__item"><span><img src="" alt=""></span>Корзина:<span>:пока пуста</span></li>
+            <li class="navigation navigation__item">
+              <span class="search" data-attr="search">
+                <img src="./img/icon-search.svg" alt="Поиск по сайту"></span>Поиск по сайту</li>
+            <li class="navigation navigation__item">
+              <span class="basket">
+                <img src="./img/icon-cart.svg" alt="Корзина"></span>Корзина:<span data-attr="basket">пока пуста</span></li>
           </ul>
-          <button class="navigation navigation__btn"></button>
         </div>
       </nav>
     </header>
@@ -49,10 +53,10 @@
             </h2>
           </span>
           <span class="merchandise-head">
-            <h3 class="merchandise-head merchandise-head__goods-day">Товар недели</h3>
+            <h3 class="merchandise-head merchandise-head__goods-day" data-attr="goods__day-name">Товар недели</h3>
           </span>
           <div class="merchandise merchandise__text">
-            <p class="merchandise__text merchandise__text-info">
+            <p class="merchandise__text merchandise__text-info" data-attr="goods__day-info">
               Экологически чистая пряжа, ручная работа.
               Доступны в шести расцветках, и трех размерах.
             </p>
@@ -60,14 +64,14 @@
           <div class="merchandise merchandise__form">
             <table class="merchandise merchandise__form-table">
               <tbody>
-                <tr><td>Цвет:</td><td class="merchandise__form-padding">Тиффани/серый</td></tr>
-                <tr><td>Диаметр:</td><td><span>25</span>см</td></tr>
-                <tr><td>Высота:</td><td><span>15</span>см</td></tr>
+                <tr><td>Цвет:</td><td class="merchandise__form-padding" data-attr="merchandise__brand">Тиффани/серый</td></tr>
+                <tr><td>Диаметр:</td><td><span data-attr="brand__width">25</span>см</td></tr>
+                <tr><td>Высота:</td><td><span data-attr="brand__heigth">15</span>см</td></tr>
               </tbody>
             </table>
-            <img src="./img/triple-set-mobile@1x.jpg" alt="">
-            <span class="merchandise__form merchandise__form-price">Цена: <span class="price">990</span> руб.</span>
-            <button class="merchandise__form merchandise__form-btn">Заказать</button>
+            <img src="./img/triple-set-mobile@1x.jpg" alt="Корзинки">
+            <span class="merchandise__form merchandise__form-price">Цена: <span class="price" data-attr="price">990</span> руб.</span>
+            <button class="merchandise__form merchandise__form-btn" type="button">Заказать</button>
           </div>
         </section>
         <section class="about-us">
@@ -113,9 +117,9 @@
                 и мои фотографии сразу стали более стильными,
                 а также набирают больше лайков!</p>
             </div>
-            <span class="reviews reviews_name">
+            <span class="reviews reviews__name">
               <h3>Анастасия Красильникова</h3>
-              <p>@misssssiskras</p>
+              <span class="reviews reviews__hash">@misssssiskras</span>
             </span>
           </div>
           <div class="reviews-btn">
@@ -136,10 +140,11 @@
             <tbody>
               <tr>
                 <td>e-mail:</td>
-                <td>info@mimimishkashop.ru</td>
+                <td class="contacts contacts__email" data-attr="contacts__email">info@mimimishkashop.ru</td>
               </tr>
-              <tr><td>адрес:</td>
-                <td>г. Санкт-Петербург,
+              <tr>
+                <td>адрес:</td>
+                <td class="contacts contacts__adress" data-attr="contacrts__adress">г. Санкт-Петербург,
                 ул. Большая Конюшенная,
                 д. 19/8, офис 101</td>
               </tr>
@@ -148,8 +153,8 @@
         </section>
         <section class="container">
           <iframe class="contacts contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609087091647!5m2!1sru!2sru"
-                width="100%" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          <button class="contacts contacts__btn btn">Напишите нам</button>
+                width="100%" height="460" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <button class="contacts contacts__btn btn" type="button">Напишите нам</button>
         </section>
     </main>
     <footer>
@@ -175,5 +180,6 @@
         </section>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>

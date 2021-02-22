@@ -1,5 +1,12 @@
 .navigation {
-  .navigation__item {
+  height: auto;
+  padding-left: 0;
+
+  &__item {
+    height: 78px;
+    padding-top: 30px;
+    font-weight: 700;
+    text-align: center;
     list-style-type: none;
   }
 }

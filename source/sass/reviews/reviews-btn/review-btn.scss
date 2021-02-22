@@ -1,6 +1,8 @@
 .reviews-btn {
   display: flex;
   flex-direction: row;
+  flex-basis: 100%;
+  justify-content: center;
   background-color: #ffffff;
   border-color: #ececec;
 }

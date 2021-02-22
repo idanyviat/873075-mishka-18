@@ -1,4 +1,12 @@
 .navigation-bar {
-  height: 78px;
+  height: auto;
   border-bottom: 1px solid #ececec;
+
+  &--closed .navigation {
+    display: none;
+  }
+
+  &--opened .navigation {
+    display: block;
+  }
 }
