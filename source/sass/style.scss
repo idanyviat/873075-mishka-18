@@ -3,6 +3,7 @@ $desktop-width: 1300px;
 $retina-dppx: 1.5dppx;
 
 @import "./btn/btn.scss";
+@import "./hidden/hidden.scss";
 @import "./container/container.scss";
 @import "./contacts/contacts.scss";
 @import "./contacts-btn/constacts-btn.scss";
