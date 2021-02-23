@@ -19,6 +19,10 @@
     background-color: transparent;
     background-image: url("../img/icon-menu-close.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
 
   &__first-block {
@@ -30,5 +34,12 @@
     background-image: url("../img/logo-mobile.svg");
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      background-image: url("../img/logo-tablet.svg");
+      background-position: left;
+      background-position-x: 50px;
+      border-bottom: 1px solid #e7e7e7;
+    }
   }
 }
