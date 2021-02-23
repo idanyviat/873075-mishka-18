@@ -5,9 +5,11 @@ navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('navigation-bar--closed')) {
     navMain.classList.remove('navigation-bar--closed');
     navMain.classList.add('navigation-bar--opened');
+    navToggle.style.backgroundImage = "url('../img/icon-menu-close.svg')";
   } else {
     navMain.classList.add('navigation-bar--closed');
     navMain.classList.remove('navigation-bar--opened');
+    navToggle.style.backgroundImage = "url('../img/icon-menu-open.svg')";
   }
 });
 

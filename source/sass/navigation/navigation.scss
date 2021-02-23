@@ -5,8 +5,19 @@
   &__item {
     height: 78px;
     padding-top: 30px;
+    font-size: 17px;
+    font-family: "OpenSansBold", "Arial", sans-serif;
     font-weight: 700;
     text-align: center;
     list-style-type: none;
+
+    &--search,
+    &--basket {
+      height: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0 30px;
+    }
   }
 }

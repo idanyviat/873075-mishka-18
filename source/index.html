@@ -9,16 +9,18 @@
   <body>
     <header>
       <nav class="navigation-bar navigation-bar--opened">
-        <button class="navigation-bar__toggle" type="button"><span class="hidden">Открыть меню</span></button>
+        <span class="navigation-bar__first-block">
+          <button class="navigation-bar__toggle" type="button"><span class="hidden">Открыть меню</span></button>
+        </span>
         <div class="container">
           <ul class="navigation">
             <li class="navigation navigation__item">Каталог товаров</li>
             <li class="navigation navigation__item">Вязание на заказ</li>
             <li class="navigation navigation__item">
-              <span class="search" data-attr="search">
+              <span class="navigation__item navigation__item--search" data-attr="search">
                 <img src="./img/icon-search.svg" alt="Поиск по сайту"></span>Поиск по сайту</li>
             <li class="navigation navigation__item">
-              <span class="basket">
+              <span class="navigation__item navigation__item--basket">
                 <img src="./img/icon-cart.svg" alt="Корзина"></span>Корзина:<span data-attr="basket">пока пуста</span></li>
           </ul>
         </div>
@@ -36,6 +38,7 @@
                 <h2 class="promo-card__block promo-card__block-h2">
                   Предметы  интерьера
                 </h2>
+                <img class="promo-card__block-img promo-card__block-img--first" src="./img/icon-interior.svg" alt="Предметы интерьера">
               </span>
           </div>
           <div class="promo-card">
@@ -43,6 +46,7 @@
               <h2 class="promo-card__block promo-card__block-h2">
                 Детские игрушки
               </h2>
+              <img class="promo-card__block-img promo-card__block-img--second" src="./img/icon-toy.svg" alt="Детские игрушки">
             </span>
           </div>
         </section>
