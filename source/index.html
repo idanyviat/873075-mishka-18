@@ -9,17 +9,24 @@
   <body>
     <header>
       <nav class="navigation-bar navigation-bar--opened">
-        <button class="navigation-bar__toggle" type="button"><span class="visability-hidden">Открыть меню</span></button>
+        <span class="navigation-bar__first-block">
+          <button class="navigation-bar__toggle" type="button"><span class="hidden">Открыть меню</span></button>
+        </span>
         <div class="container">
           <ul class="navigation">
             <li class="navigation navigation__item">Каталог товаров</li>
             <li class="navigation navigation__item">Вязание на заказ</li>
             <li class="navigation navigation__item">
-              <span class="search" data-attr="search">
-                <img src="./img/icon-search.svg" alt="Поиск по сайту"></span>Поиск по сайту</li>
+              <span class="navigation__item navigation__item--search" data-attr="search">
+                <img src="./img/icon-search.svg" alt="Поиск по сайту">
+              </span>Поиск по сайту
+            </li>
             <li class="navigation navigation__item">
-              <span class="basket">
-                <img src="./img/icon-cart.svg" alt="Корзина"></span>Корзина:<span data-attr="basket">пока пуста</span></li>
+              <span class="navigation__item navigation__item--basket">
+                <img src="./img/icon-cart.svg" alt="Корзина">
+              </span>Корзина:
+              <span data-attr="basket">пока пуста</span>
+            </li>
           </ul>
         </div>
       </nav>
@@ -28,7 +35,7 @@
         <section class="promo">
           <div class="promo-head">
             <h1 class="promo-head__h1">
-              Милые штуки<br> ручной<br> работы для дома
+              Милые штуки ручной работы для дома
             </h1>
           </div>
           <div class="promo-card">
@@ -36,13 +43,13 @@
                 <h2 class="promo-card__block promo-card__block-h2">
                   Предметы  интерьера
                 </h2>
+                <img class="promo-card__block-img promo-card__block-img--first" src="./img/icon-interior.svg" alt="Предметы интерьера">
               </span>
-          </div>
-          <div class="promo-card">
-            <span class="promo-card__block promo-card__block-second">
-              <h2 class="promo-card__block promo-card__block-h2">
-                Детские игрушки
-              </h2>
+              <span class="promo-card__block promo-card__block-second">
+                <h2 class="promo-card__block promo-card__block-h2">
+                  Детские игрушки
+                </h2>
+                <img class="promo-card__block-img promo-card__block-img--second" src="./img/icon-toy.svg" alt="Детские игрушки">
             </span>
           </div>
         </section>
@@ -51,27 +58,31 @@
             <h2 class="merchandise-head merchandise-head__goods-name">
               Вязаные корзинки
             </h2>
-          </span>
-          <span class="merchandise-head">
             <h3 class="merchandise-head merchandise-head__goods-day" data-attr="goods__day-name">Товар недели</h3>
           </span>
-          <div class="merchandise merchandise__text">
-            <p class="merchandise__text merchandise__text-info" data-attr="goods__day-info">
+          <div class="merchandise__block">
+            <div class="merchandise merchandise__text">
+              <p class="merchandise__text merchandise__text-info" data-attr="goods__day-info">
               Экологически чистая пряжа, ручная работа.
               Доступны в шести расцветках, и трех размерах.
-            </p>
-          </div>
-          <div class="merchandise merchandise__form">
-            <table class="merchandise merchandise__form-table">
-              <tbody>
-                <tr><td>Цвет:</td><td class="merchandise__form-padding" data-attr="merchandise__brand">Тиффани/серый</td></tr>
-                <tr><td>Диаметр:</td><td><span data-attr="brand__width">25</span>см</td></tr>
-                <tr><td>Высота:</td><td><span data-attr="brand__heigth">15</span>см</td></tr>
-              </tbody>
-            </table>
-            <img src="./img/triple-set-mobile@1x.jpg" alt="Корзинки">
-            <span class="merchandise__form merchandise__form-price">Цена: <span class="price" data-attr="price">990</span> руб.</span>
-            <button class="merchandise__form merchandise__form-btn" type="button">Заказать</button>
+              </p>
+            </div>
+            <div class="merchandise merchandise__form">
+              <table class="merchandise merchandise__form-table">
+                <tbody>
+                  <tr><td>Цвет:</td><td class="merchandise__form-padding" data-attr="merchandise__brand">Тиффани/серый</td></tr>
+                  <tr><td>Диаметр:</td><td><span data-attr="brand__width">25</span>см</td></tr>
+                  <tr><td>Высота:</td><td><span data-attr="brand__heigth">15</span>см</td></tr>
+                </tbody>
+              </table>
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/triple-set-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+                <img src="./img/triple-set-mobile@1x.jpg" alt="Корзинки">
+              </picture>
+              <span class="merchandise__form merchandise__form-price">Цена: <span class="price" data-attr="price">990</span> руб.</span>
+              <button class="merchandise__form merchandise__form-btn" type="button">Заказать</button>
+            </div>
           </div>
         </section>
         <section class="about-us">
@@ -110,17 +121,47 @@
             <span class="reviews reviews__title">
               <h3>Отзывы</h3>
             </span>
-            <div class="reviews reviews__text">
-              <p>Я молодая мама, но всё равно фотографии не набирали
-                и близко такого количества лайков, как у популярных инстамамочек.
-                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными,
-                а также набирают больше лайков!</p>
+            <div class="reviews__slide">
+              <div class="reviews__slide-item">
+                <div class="reviews reviews__text">
+                  <p>Я молодая мама, но всё равно фотографии не набирали
+                    и близко такого количества лайков, как у популярных инстамамочек.
+                    В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                    и мои фотографии сразу стали более стильными,
+                    а также набирают больше лайков!</p>
+                </div>
+                <span class="reviews reviews__name" data-attr="reviews__name">
+                  <h3>Анастасия Красильникова</h3>
+                  <span class="reviews reviews__hash" data-attr="hasteg">@misssssiskras</span>
+                </span>
+              </div>
+              <div class="reviews__slide-item">
+                <div class="reviews reviews__text">
+                  <p>Я молодая мама, но всё равно фотографии не набирали
+                    и близко такого количества лайков, как у популярных инстамамочек.
+                    В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                    и мои фотографии сразу стали более стильными,
+                    а также набирают больше лайков!</p>
+                </div>
+                <span class="reviews reviews__name" data-attr="reviews__name">
+                  <h3>Анастасия Cvbhyjdf</h3>
+                  <span class="reviews reviews__hash" data-attr="hasteg">@misssssiskras</span>
+                </span>
+              </div>
+              <div class="reviews__slide-item">
+                <div class="reviews reviews__text">
+                  <p>Я молодая мама, но всё равно фотографии не набирали
+                    и близко такого количества лайков, как у популярных инстамамочек.
+                    В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                    и мои фотографии сразу стали более стильными,
+                    а также набирают больше лайков!</p>
+                </div>
+                <span class="reviews reviews__name" data-attr="reviews__name">
+                  <h3>Анастасия Dfcова</h3>
+                  <span class="reviews reviews__hash" data-attr="hasteg">@misssssiskras</span>
+                </span>
+              </div>
             </div>
-            <span class="reviews reviews__name">
-              <h3>Анастасия Красильникова</h3>
-              <span class="reviews reviews__hash">@misssssiskras</span>
-            </span>
           </div>
           <div class="reviews-btn">
             <button class="review-btn btn btn-left" type="button">

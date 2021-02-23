@@ -55,5 +55,12 @@
     border: 2px solid #444444;
     background-color: white;
   }
+
+  &__block {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 

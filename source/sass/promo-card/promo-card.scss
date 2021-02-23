@@ -2,39 +2,65 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    background-color: #fbfbfb;
+  }
+
   &__block {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    height: 105px;
+
+    @media (min-width: $tablet) {
+      padding-right: 40px;
+      flex-basis: 100%;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-position-y: 90px;
+    }
   }
 
   &__block-h2 {
-    width: 130px;
+    width: 230px;
     margin: 0;
     padding-left: 30px;
-    padding-top: 30px;
+    padding-right: 31px;
+    padding-top: 28px;
+    padding-bottom: 30px;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: "OpenSansBold", "Arial", sans-serif;
     color: white;
   }
   //добавить стили для img
   &__block-img {
+    fill: #3bb09d;
+
+    &--first {
+      margin-left: 10px;
+      width: 40px;
+    }
+
+    &--second {
+      width: 60px;
+    }
   }
 
   &__block-first {
-    height: 105px;
     background-color: #63d1bb;
-    background-image: url("../img/icon-interior.svg");
-    background-position-x: 250px;
-    background-position-y: center;
-    background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      margin-left: 40px;
+    }
   }
 
   &__block-second {
-    height: 105px;
     background-color: #56c3b2;
-    background-image: url("../img/icon-toy.svg");
-    background-position-x: 240px;
-    background-position-y: center;
-    background-repeat: no-repeat;
-  }
 
+    @media (min-width: $tablet) {
+      margin-right: 40px;
+    }
+  }
 }

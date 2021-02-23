@@ -1,4 +1,18 @@
 .merchandise-head {
+  @media (min-width: $tablet) {
+    display: flex;
+
+    .merchandise-head__goods-name {
+      flex-basis: 100%;
+      font-size: 43px;
+    }
+
+    &__goods-day {
+      padding-top: 45px;
+      text-align: center;
+    }
+  }
+
   &__goods-name,
   &__goods-day {
     margin-bottom: 0;
