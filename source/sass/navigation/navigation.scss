@@ -20,4 +20,29 @@
       padding: 0 30px;
     }
   }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+
+    &__item {
+      padding-left: 50px;
+    }
+
+    &__basket,
+    &__search {
+      position: absolute;
+      top: 0;
+      left: 60%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__search {
+      font-size: 0;
+      left: 50%;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+  }
 }

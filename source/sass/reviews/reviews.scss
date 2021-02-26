@@ -23,4 +23,13 @@
       margin-top: 0;
     }
   }
+
+  @media (min-width: $tablet) {
+    &__title {
+      h3 {
+        font-size: 43px;
+        padding-bottom: 40px;
+      }
+    }
+  }
 }

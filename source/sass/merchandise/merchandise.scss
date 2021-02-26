@@ -56,10 +56,37 @@
     background-color: white;
   }
 
-  &__block {
-    @media (min-width: $tablet) {
+  @media (min-width: $tablet) {
+    &__text {
+      width: 250px;
+    }
+
+    &__form {
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      picture {
+        position: absolute;
+        padding-left: 355px;
+      }
+    }
+
+    &__form-price {
+      width: 260px;
+    }
+
+    &__form-btn {
+      width: 280px;
+      flex-direction: row;
+    }
+
+    &__block {
       display: flex;
       flex-direction: column;
+      padding-bottom: 50px;
+      background-image: url("/img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
     }
   }
 }
