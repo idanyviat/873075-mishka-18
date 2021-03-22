@@ -11,6 +11,10 @@
   }
 
   @media (max-width: 600px) {
+    &__logo-site {
+      display: none;
+    }
+
     &__footer-logo {
       display: none;
     }
