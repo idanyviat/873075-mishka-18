@@ -1,6 +1,21 @@
 .footer-block {
   height: 80px;
 
+  @media (min-width: $tablet) {
+    padding-top: 5%;
+
+    &__footer-logo {
+      display: block;
+      padding-top: 25px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__footer-logo {
+      display: none;
+    }
+  }
+
   &__footer-social {
     display: flex;
     flex-direction: row;

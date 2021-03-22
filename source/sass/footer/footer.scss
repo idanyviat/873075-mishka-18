@@ -1,4 +1,11 @@
 .footer {
   display: flex;
   flex-direction: column;
+  background-color: #f1f1f1;
+
+  @media (min-width: $tablet) {
+    height: 146px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

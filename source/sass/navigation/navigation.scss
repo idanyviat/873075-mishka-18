@@ -26,7 +26,10 @@
     flex-direction: row;
 
     &__item {
-      padding-left: 50px;
+      &--first,
+      &--second {
+        padding-left: 50px;
+      }
     }
 
     &__basket,
@@ -41,8 +44,8 @@
     &__search {
       font-size: 0;
       left: 50%;
-      border-left: 1px solid black;
-      border-right: 1px solid black;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
     }
   }
 }
