@@ -93,5 +93,31 @@
       background-position: bottom;
     }
   }
+
+  @media (min-width: $desktop) {
+    &__text {
+      width: 300px;
+      padding-left: 14%;
+    }
+
+    &__form-table {
+      padding-left: 15%;
+    }
+
+    &__form {
+      picture {
+        top: 100%;
+        padding-left: 50%;
+      }
+    }
+
+    &__form-price {
+      margin-left: 15%;
+    }
+
+    &__form-btn {
+      margin-left: 15%;
+    }
+  }
 }
 

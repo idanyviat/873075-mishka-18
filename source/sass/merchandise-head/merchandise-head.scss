@@ -5,12 +5,23 @@
     .merchandise-head__goods-name {
       flex-basis: 100%;
       font-size: 43px;
+
+      @media (min-width: $desktop) {
+        padding-left: 6%;
+        font-size: 53px;
+        z-index: 1;
+      }
     }
 
     &__goods-day {
       padding-top: 45px;
       text-align: center;
     }
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 
   &__goods-name,

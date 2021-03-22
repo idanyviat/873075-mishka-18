@@ -20,6 +20,10 @@
       background-repeat: no-repeat;
       background-position-y: 90px;
     }
+
+    @media (min-width: $desktop) {
+      background-position-x: -9px;
+    }
   }
 
   &__block-h2 {
