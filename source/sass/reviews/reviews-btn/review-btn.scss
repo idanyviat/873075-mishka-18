@@ -5,4 +5,18 @@
   justify-content: center;
   background-color: #ffffff;
   border-color: #ececec;
+
+  button {
+    width: 75px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  @media (min-width: $tablet) {
+    height: 54px;
+    position: relative;
+    left: 30%;
+    flex-basis: auto;
+  }
 }

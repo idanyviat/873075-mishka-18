@@ -21,4 +21,22 @@
     align-self: flex-start;
     fill: #63d1bb;
   }
+
+  @media (min-width: $tablet) {
+    &__title {
+      font-size: 43px;
+      padding: 0 50px;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0 50px;
+    }
+
+    &__cards-advantages {
+      width: 325px;
+    }
+  }
 }

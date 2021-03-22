@@ -8,6 +8,10 @@
 
   &--opened .navigation {
     display: block;
+
+    @media (min-width: $tablet) {
+      display: flex;
+    }
   }
 
   &__toggle {

@@ -4,4 +4,11 @@
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0 30px;
+
+  @media (min-width: $tablet) {
+    height: 460px;
+    margin-top: 40px;
+    background-image: url("/img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
 }
